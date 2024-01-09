@@ -1,0 +1,11 @@
+:root {
+  --primary-font: "Inter", sans-serif;
+  --secondary-font: "Darker Grotesque", sans-serif;
+}
+h1 {
+  font-family: var(--primary-font);
+}
+
+p {
+  font-family: var(--secondary-font);
+}
