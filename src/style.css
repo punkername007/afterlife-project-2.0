@@ -9,14 +9,13 @@ body {
   color: white;
   font-family: var(--secondary-font);
 }
-/* //////////////////////////////////////////////////////////////////////////////// */
 .container {
   max-width: 100%;
   margin: 0 auto;
 }
 
+/* //////////////////////////////////////////////////////////////////////////////// */
 header {
-  color: white;
   background-image: linear-gradient(var(--gradient)), url(/images/header.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -61,12 +60,13 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 30px;
+  padding: 80px 60px;
 }
+
 footer h3 {
   font-family: var(--primary-font);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 footer ul {
@@ -82,9 +82,14 @@ footer a {
   text-decoration: none;
   opacity: 0.7;
   line-height: 1;
+  transition: all 200ms ease-in-out;
 }
 footer p {
   letter-spacing: 1px;
+}
+
+footer a:hover {
+  opacity: 1;
 }
 
 .grid {
@@ -110,9 +115,13 @@ footer p {
     font-size: 16px;
     padding: 13px 26px;
   }
+  footer a {
+    display: inline-block;
+    margin-top: 2px;
+  }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header h1 {
     font-size: 56px;
   }
@@ -127,6 +136,27 @@ footer p {
   }
   footer h3 {
     font-size: 14px;
+    margin: 3px 0;
+  }
+  footer ul {
+    margin: 3px 0;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 10px;
+    letter-spacing: 0;
+    margin: 0 auto;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .first-col {
+    border: none;
   }
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -156,28 +186,5 @@ footer p {
   }
   footer h3 {
     font-size: 14px;
-    margin: 3px 0;
-  }
-
-  footer ul {
-    margin: 3px 0;
-  }
-
-  footer a {
-    font-size: 12px;
-  }
-
-  footer p {
-    font-size: 10px;
-    letter-spacing: 0;
-    margin: 0 auto;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .first-col {
-    border: none;
   }
 }
