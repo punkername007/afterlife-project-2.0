@@ -7,6 +7,10 @@ body {
   background: black;
 }
 
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
 header {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -14,8 +18,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
-  padding: 120px 100px;
+  padding: 120px 0;
   text-align: center;
 }
 
@@ -80,7 +83,7 @@ header a {
 
 @media (max-width: 576px) {
   header {
-    padding: 60px 50px;
+    padding: 60px 0;
   }
   header h1 {
     font-size: 36px;
