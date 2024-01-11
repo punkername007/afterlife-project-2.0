@@ -52,6 +52,7 @@ a.button {
   letter-spacing: 3px;
   margin-top: 20px;
   padding: 15px 30px;
+  transition: all 200ms ease-in-out;
   text-decoration: none;
 }
 
@@ -138,8 +139,8 @@ main .secondary-section {
   transition: all 200ms ease-in-out;
 }
 
-.card-footer .button:hover {
-  background-color: rgba(19, 19, 19, 0.553);
+.button:hover {
+  background-color: rgba(8, 8, 8, 0.668);
 }
 
 main h4 {
@@ -163,6 +164,63 @@ main h5 {
   width: 100%;
   aspect-ratio: 1/1;
 }
+/* //////////////////////////////////////////////////////////////////////////////// */
+.third-section-header {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.third-section-header p {
+  margin-top: 5px;
+  font-weight: 100;
+}
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 100px;
+}
+
+.gallery-container {
+  width: 60%;
+  padding: 60px 60px 100px;
+  margin: 0 auto;
+}
+
+.podcast {
+  position: relative;
+}
+
+.podcast img {
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+.podcast .podcast-btn {
+  bottom: 45%;
+  position: absolute;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+  text-align: center;
+  width: 100%;
+}
+
+a.link-text {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 5px 25px;
+  margin: 0 auto;
+  transition: all 200ms ease-in-out;
+  text-transform: uppercase;
+}
+
+.podcast:hover img {
+  filter: brightness(50%);
+  box-shadow: 2px 4px 20px 2px rgba(255, 255, 255, 0.22);
+}
+
+.podcast:hover .podcast-btn {
+  opacity: 1;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* FOOTER */
 
@@ -275,6 +333,14 @@ footer a:hover {
 
   .card img {
     display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-container {
+    padding: 30px 60px 50px;
   }
 }
 
