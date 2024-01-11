@@ -248,6 +248,7 @@ footer li {
 
 footer a {
   color: white;
+  font-weight: 600;
   text-decoration: none;
   opacity: 0.7;
   line-height: 1;
@@ -271,7 +272,17 @@ footer a:hover {
 }
 
 .first-col {
+  text-align: center;
   border-right: 1px solid white;
+  padding-right: 20px;
+}
+
+.icons {
+  margin-top: 15px;
+}
+
+.icons i {
+  font-size: 20px;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -342,6 +353,10 @@ footer a:hover {
   .gallery-container {
     padding: 30px 60px 50px;
   }
+
+  .first-col {
+    text-align: left;
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -390,13 +405,21 @@ footer a:hover {
   }
 
   footer p {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1px;
     margin: 0 auto;
   }
 
+  .icons i {
+    font-size: 15px;
+  }
+
   .grid-2-col-narrow {
     grid-template-columns: 1fr;
+  }
+
+  .grid-3-col {
+    margin-top: 8px;
   }
 
   .first-col {
@@ -424,6 +447,11 @@ footer a:hover {
     letter-spacing: 1px;
     margin-top: 13px;
     padding: 9px 18px;
+  }
+
+  a.button.link-text {
+    font-size: 6px;
+    padding: 4px 13px;
   }
 
   /* main h2 {
