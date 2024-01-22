@@ -5,10 +5,11 @@
 }
 
 body {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
   font-family: var(--secondary-font);
 }
+
 .container {
   max-width: 100%;
   margin: 0 auto;
@@ -59,7 +60,7 @@ a.button {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* MAIN SECTION */
 
-main .first-section {
+.first-section {
   padding: 100px 60px;
   margin: 0 auto;
 }
@@ -86,6 +87,19 @@ main p {
   opacity: 0.7;
 }
 
+main h4 {
+  font-size: 25px;
+  margin: 8px auto;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+main h5 {
+  font-size: 16px;
+  margin: 10px auto;
+  letter-spacing: 2px;
+}
+
 .img-responsive {
   width: 100%;
 }
@@ -101,7 +115,7 @@ main p {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* UNITY SECTION */
 
-main .secondary-section {
+.secondary-section {
   background: var(--gradient), url(/images/unity.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -143,19 +157,6 @@ main .secondary-section {
   background-color: rgba(8, 8, 8, 0.668);
 }
 
-main h4 {
-  font-size: 25px;
-  margin: 8px auto;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-main h5 {
-  font-size: 16px;
-  margin: 10px auto;
-  letter-spacing: 2px;
-}
-
 .card-header.grid-2-col {
   grid-gap: 0;
 }
@@ -164,7 +165,10 @@ main h5 {
   width: 100%;
   aspect-ratio: 1/1;
 }
+
 /* //////////////////////////////////////////////////////////////////////////////// */
+/* VOYAGE SECTION */
+
 .third-section-header {
   padding-top: 50px;
   text-align: center;
@@ -334,7 +338,7 @@ footer a:hover {
     grid-gap: 10px;
   }
 
-  main .secondary-section {
+  .secondary-section {
     padding: 30px 60px;
   }
 
@@ -453,25 +457,6 @@ footer a:hover {
     font-size: 6px;
     padding: 4px 13px;
   }
-
-  /* main h2 {
-    font-size: 8px;
-  }
-  main h3 {
-    font-size: 18px;
-  }
-  main p {
-    font-size: 8px;
-    letter-spacing: 1px;
-  }
-
-  main h4 {
-    font-size: 12px;
-  }
-
-  main h5 {
-    font-size: 8px;
-  } */
 
   main .first-section,
   main .secondary-section {
